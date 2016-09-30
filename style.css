@@ -1,0 +1,145 @@
+
+body {
+  background-position: top left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  font: bold 12px verdana,arial;
+  color: #ffffff;
+}
+table, .description {
+  background-repeat: repeat-x;
+  background-color: #1D1D1D;
+  border-collapse: collapse;
+  border: 2px solid #272727;
+}
+th {
+  font: bold 12px verdana,arial;
+  border: none;
+}
+td {
+  font: 11px verdana,arial;
+  border: #212121 solid 1px;
+  border-width: 0px 0px 1px 0px;
+}
+img {
+  border: 0px;
+}
+input {
+  border: #3B3B3B 1px solid;
+  font: bold 11px verdana,arial;
+  color: #FFFFFF;
+  background-color: #212121;
+  text-align: center;
+  -moz-border-radius-bottomleft:4px;
+  -moz-border-radius-bottomright:4px;
+  -moz-border-radius-topleft:4px;
+  -moz-border-radius-topright:4px;
+}
+input.qt_1 {
+  color: #3B3B3B;
+}
+input.qt_2 {
+  color: #3B3B3B;
+}
+input:focus {
+  border: #60A0DC 1px solid;
+}
+select {
+  border: #3B3B3B 1px solid;
+  font: bold 10px verdana,arial;
+  color: #ffffff;
+  background-color: #212121;
+  -moz-border-radius-bottomleft:4px;
+  -moz-border-radius-bottomright:4px;
+  -moz-border-radius-topleft:4px;
+  -moz-border-radius-topright:4px;
+}
+textarea {
+  border: #3B3B3B 1px solid;
+  font: bold 11px verdana,arial;
+  color: #ffffff;
+  background-color: #212121;
+  -moz-border-radius-bottomleft:4px;
+  -moz-border-radius-bottomright:4px;
+  -moz-border-radius-topleft:4px;
+  -moz-border-radius-topright:4px;
+}
+textarea:focus {
+  border: #60A0DC 1px solid;
+}
+a:link, a:visited {
+  color: #60A0DC;
+  text-decoration: none;
+}
+a:hover {
+  color: #80D6FF;
+}
+p {
+  margin: 0px;
+}
+.title {
+  font: bold 12px verdana,arial;
+  text-align: center;
+}
+.th_header2 {
+  background-repeat: repeat-x; 
+  background-color: #1D1D1D;
+  font: bold 12px verdana,arial;
+  color: white
+}
+.container {
+  margin: 0px auto;
+  background: none;
+  border: none;
+}
+.description {
+  padding: 10px;
+  width: 780px;
+  margin: 0px auto;
+}
+.blank {
+  border: none;
+}
+.multiline_defences  {
+  padding-bottom:0.8em;
+}
+.economy {
+  font-weight:bold;
+}
+.jumpgate {
+  font-weight:bold;
+}
+.commanddetails {
+  color: #AAAAAA;
+}
+.fleets, .turrets {
+  border:none; background: none;
+}
+.turrets td{
+  color:#FC9977; padding:0px;
+}
+.turrets td.turret_values {
+  text-align:center; padding-left: 0.8em;
+}
+.fleets td {
+  color:#96FB84; padding:0em;
+}
+.fleets td.fleet_values {
+  text-align:right; padding-left: 0.8em;
+}
+.result {
+  display: none;
+}
+.valid {
+  border:2px solid green !important;
+}
+.invalid {
+  border:2px solid #800 !important;
+}
+.orange {
+  color: orange;
+}
+.red {
+  color: red;
+}

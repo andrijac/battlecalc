@@ -1,0 +1,1181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"><!--
+			BODY, TABLE {font-family: verdana,arial; font-size: 13px}
+	INPUT, SELECT {font-family: verdana,arial; font-size: 11px}
+	.small {font-size: 12px}
+	.xsmall {font-size: 11px}
+	.gray {color: #b0b0b0}
+	.black {color: #000000}
+	.title {color: #ffeecc; background: #400000}
+	.bluetitle {color: #ffeecc; background: #000040}
+	.y {color: #ffeecc}
+	div.thumbnail {
+			float: left;
+			width: 170px;
+			height: 184px;
+			padding: 3px 3px 0px 3px;
+			text-align: center;
+}
+div.folder {
+	float:left;
+	height:20px;
+	padding:3px 3px 0px;
+	text-align:center;
+	width:50px;
+}
+#mymenu {
+	float: left;
+	padding: 3px;
+	background-color: #000000;
+}
+div {
+	padding: 3px;
+}
+// --></style><title>AE battle calc</title><style type="text/css">* {}</style><style type="text/css"></style><meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;jQuery&quot;:&quot;1.2.6&quot;}"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script></head><body bgcolor="#000000" text="#FFFFFE" link="#FFEECC" vlink="#FFDDBB"><div id="mymenu"><form method="post"> <br></form><table><tbody><tr><td style="color:#FFFFFE">Battle Calc</td></tr>
+</tbody></table></div><div id="wrapcentre">Online Battle Calc<br>
+
+
+    
+    <meta name="page-type" content="Astroempires Battle Calculator">
+    <meta name="page-topic" content="Astroempires Battle Calculator">
+    <meta name="audience" content="all">
+    <meta name="Keywords" content="Astroempires, calculator, Battle, AE, Astro Calculator, Astro Empires Battle Calc, Battle Calc, Battle Calculator">
+    <meta name="Description" content="Astroempires Battle Calculator, calculate combat quickly.">
+    <link type="text/css" rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="jquery_002.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="calculator.js"></script>
+	<link rel="stylesheet" media="screen" type="text/css" href="faceBox.css">
+	<style type="text/css">
+#calculator {
+	background-color: #383838;
+}
+tr {text-align: center;}      #overview {
+	background-color: #383838;
+}
+#level {
+        background-color: #383838;
+      }
+            #construction {
+	background-color: #383838;
+}
+	</style>
+
+
+<table align="center" width="800">
+<tbody>
+ <tr>
+  <th width="20%">
+    <a href="javascript:void(0);" id="reset_all">Reset All</a>
+  </th>
+  <th width="20%">
+    <a href="javascript:void(0);" id="past_data">Paste data</a>
+  </th>
+ </tr>
+</tbody></table>
+
+<t>
+   </t><table class="container" width="800">
+  <tbody><tr>
+    <td class="blank" width="50%">
+            
+<table id="yourtech" align="center" width="80%">
+  <tbody><tr>
+    <th colspan="3" class="th_header2">
+      <font size="+1">A</font>TTACKING TECHNOLOGY <a href="javascript:void(0)" title="Reset attacker&#39;s technology"><img src="littletarget.gif" id="your_tech"></a>
+    </th>
+  </tr>
+  <tr>
+    <td colspan="6"><br></td>
+  </tr>
+  <tr>
+    <td width="40%">Research</td>
+    <td width="30%">Level</td>
+    <td width="30%">Bonus</td>
+   </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">A</font>rmour      </td>
+      <td><input id="l_10" class="tech_1" name="0" value="0" size="5" type="text"></td>
+      <td id="b_10">0</td>
+     </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">L</font>aser      </td>
+      <td><input id="l_11" class="tech_1" name="1" value="0" size="5" type="text"></td>
+      <td id="b_11">0</td>
+     </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">M</font>issiles      </td>
+      <td><input id="l_12" class="tech_1" name="2" value="0" size="5" type="text"></td>
+      <td id="b_12">0</td>
+     </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">P</font>lasma      </td>
+      <td><input id="l_13" class="tech_1" name="3" value="0" size="5" type="text"></td>
+      <td id="b_13">0</td>
+     </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">S</font>hielding      </td>
+      <td><input id="l_14" class="tech_1" name="4" value="0" size="5" type="text"></td>
+      <td id="b_14">0</td>
+     </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">I</font>on      </td>
+      <td><input id="l_15" class="tech_1" name="5" value="0" size="5" type="text"></td>
+      <td id="b_15">0</td>
+     </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">P</font>hoton      </td>
+      <td><input id="l_16" class="tech_1" name="6" value="0" size="5" type="text"></td>
+      <td id="b_16">0</td>
+     </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">D</font>isruptor      </td>
+      <td><input id="l_17" class="tech_1" name="7" value="0" size="5" type="text"></td>
+      <td id="b_17">0</td>
+     </tr>
+     <tr>
+    <td colspan="3"><br></td>
+   </tr>
+   <tr>
+    <td align="left"><font size="+1">C</font>ommand Cters</td>
+    <td><input id="l_18" class="tech_1" name="8" value="0" size="5" type="text"></td>
+    <td id="b_18">0</td>
+   </tr>
+   <tr>
+    <td colspan="3"><br></td>
+   </tr>
+   <tr>
+    <td align="left"><font size="+1">D</font>efense Cmder</td>
+    <td><input id="l_19" class="cmd_1" name="9" value="0" size="5" type="text"></td>
+    <td id="b_19">0</td>
+   </tr>
+   <tr>
+    <td align="left"><font size="+1">T</font>actical Cmder</td>
+    <td><input id="l_110" class="cmd_1" name="10" value="0" size="5" type="text"></td>
+    <td id="b_110">0</td>
+   </tr>
+  </tbody></table>
+ </td>
+ <td class="blank" width="50%">
+<table id="enemtech" align="center" width="80%">
+  <tbody><tr>
+    <th colspan="3" class="th_header2">
+      <font size="+1">D</font>EFENDING TECHNOLOGY <a href="javascript:void(0)" title="Reset defender&#39;s technology"><img src="littletarget.gif" id="enem_tech"></a>
+    </th>
+  </tr>
+  <tr>
+    <td colspan="6"><br></td>
+  </tr>
+  <tr>
+    <td width="40%">Research</td>
+    <td width="30%">Level</td>
+    <td width="30%">Bonus</td>
+   </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">A</font>rmour      </td>
+      <td><input id="l_20" class="tech_2" name="0" value="0" size="5" type="text"></td>
+      <td id="b_20">0</td>
+     </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">L</font>aser      </td>
+      <td><input id="l_21" class="tech_2" name="1" value="0" size="5" type="text"></td>
+      <td id="b_21">0</td>
+     </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">M</font>issiles      </td>
+      <td><input id="l_22" class="tech_2" name="2" value="0" size="5" type="text"></td>
+      <td id="b_22">0</td>
+     </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">P</font>lasma      </td>
+      <td><input id="l_23" class="tech_2" name="3" value="0" size="5" type="text"></td>
+      <td id="b_23">0</td>
+     </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">S</font>hielding      </td>
+      <td><input id="l_24" class="tech_2" name="4" value="0" size="5" type="text"></td>
+      <td id="b_24">0</td>
+     </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">I</font>on      </td>
+      <td><input id="l_25" class="tech_2" name="5" value="0" size="5" type="text"></td>
+      <td id="b_25">0</td>
+     </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">P</font>hoton      </td>
+      <td><input id="l_26" class="tech_2" name="6" value="0" size="5" type="text"></td>
+      <td id="b_26">0</td>
+     </tr>
+       <tr>
+      <td align="left">
+        <font size="+1">D</font>isruptor      </td>
+      <td><input id="l_27" class="tech_2" name="7" value="0" size="5" type="text"></td>
+      <td id="b_27">0</td>
+     </tr>
+     <tr>
+    <td colspan="3"><br></td>
+   </tr>
+   <tr>
+    <td align="left"><font size="+1">C</font>ommand Cters</td>
+    <td><input id="l_28" class="tech_2" name="8" value="0" size="5" type="text"></td>
+    <td id="b_28">0</td>
+   </tr>
+   <tr>
+    <td colspan="3"><br></td>
+   </tr>
+   <tr>
+    <td align="left"><font size="+1">D</font>efense Cmder</td>
+    <td><input id="l_29" class="cmd_2" name="9" value="0" size="5" type="text"></td>
+    <td id="b_29">0</td>
+   </tr>
+   <tr>
+    <td align="left"><font size="+1">T</font>actical Cmder</td>
+    <td><input id="l_210" class="cmd_2" name="10" value="0" size="5" type="text"></td>
+    <td id="b_210">0</td>
+   </tr>
+  </tbody></table>
+  </td>
+ </tr>
+ <tr><td class="blank">
+     <br>
+    </td>
+   </tr><tr>
+    <td class="blank">
+<table id="atkfleet" width="99%">
+  <tbody><tr>
+    <th colspan="6" class="th_header2">
+      <font size="+1">A</font>TTACKING FLEET <a href="javascript:void(0)" title="Reset attacking fleet"><img src="littletarget.gif" id="atk_fleet"></a>
+    </th>
+  </tr>
+  <tr>
+    <td colspan="6"><br></td>
+  </tr>
+  <tr>
+    <td width="30%">Unit</td>
+    <td width="15%">Qty</td>
+    <td width="15%">Pwr</td>
+    <td width="15%">Armr</td>
+    <td width="10%">Shld</td>
+    <td width="15%">Rslt <a href="javascript:void(0)" title="End fleet -&gt; Start fleet"><img src="littletarget.gif" id="s_to_e"></a></td>
+  </tr>
+
+        <tr>
+          <td align="left">
+            <font size="+1">F</font>ighters          </td>
+          <td>
+            <input style="color: white;" id="qt_10" class="qt_1" name="0" value="0" size="5" type="text">
+          </td>
+          <td id="pw_10">2</td>
+          <td id="ar_10">2</td>
+          <td style="color: rgb(33, 33, 33);" id="sh_10">0</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_10">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">B</font>ombers          </td>
+          <td>
+            <input id="qt_11" class="qt_1" name="1" value="0" size="5" type="text">
+          </td>
+          <td id="pw_11">4</td>
+          <td id="ar_11">2</td>
+          <td style="color: rgb(33, 33, 33);" id="sh_11">0</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_11">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">H</font>eavy Bombers          </td>
+          <td>
+            <input id="qt_12" class="qt_1" name="2" value="0" size="5" type="text">
+          </td>
+          <td id="pw_12">10</td>
+          <td id="ar_12">4</td>
+          <td style="color: rgb(33, 33, 33);" id="sh_12">0</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_12">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">I</font>on Bombers          </td>
+          <td>
+            <input id="qt_13" class="qt_1" name="3" value="0" size="5" type="text">
+          </td>
+          <td id="pw_13">12</td>
+          <td id="ar_13">4</td>
+          <td id="sh_13">1</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_13">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">C</font>orvette          </td>
+          <td>
+            <input id="qt_14" class="qt_1" name="4" value="0" size="5" type="text">
+          </td>
+          <td id="pw_14">4</td>
+          <td id="ar_14">4</td>
+          <td style="color: rgb(33, 33, 33);" id="sh_14">0</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_14">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">R</font>ecycler          </td>
+          <td>
+            <input id="qt_15" class="qt_1" name="5" value="0" size="5" type="text">
+          </td>
+          <td id="pw_15">2</td>
+          <td id="ar_15">2</td>
+          <td style="color: rgb(33, 33, 33);" id="sh_15">0</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_15">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">D</font>estroyer          </td>
+          <td>
+            <input id="qt_16" class="qt_1" name="6" value="0" size="5" type="text">
+          </td>
+          <td id="pw_16">8</td>
+          <td id="ar_16">8</td>
+          <td style="color: rgb(33, 33, 33);" id="sh_16">0</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_16">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">F</font>rigate          </td>
+          <td>
+            <input id="qt_17" class="qt_1" name="7" value="0" size="5" type="text">
+          </td>
+          <td id="pw_17">12</td>
+          <td id="ar_17">12</td>
+          <td style="color: rgb(33, 33, 33);" id="sh_17">0</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_17">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">I</font>on Frigate          </td>
+          <td>
+            <input id="qt_18" class="qt_1" name="8" value="0" size="5" type="text">
+          </td>
+          <td id="pw_18">14</td>
+          <td id="ar_18">12</td>
+          <td id="sh_18">1</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_18">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">S</font>cout Ship          </td>
+          <td>
+            <input id="qt_19" class="qt_1" name="9" value="0" size="5" type="text">
+          </td>
+          <td id="pw_19">1</td>
+          <td id="ar_19">2</td>
+          <td style="color: rgb(33, 33, 33);" id="sh_19">0</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_19">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">O</font>utpost Ship          </td>
+          <td>
+            <input id="qt_110" class="qt_1" name="10" value="0" size="5" type="text">
+          </td>
+          <td id="pw_110">2</td>
+          <td id="ar_110">4</td>
+          <td style="color: rgb(33, 33, 33);" id="sh_110">0</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_110">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">C</font>ruiser          </td>
+          <td>
+            <input id="qt_111" class="qt_1" name="11" value="0" size="5" type="text">
+          </td>
+          <td id="pw_111">24</td>
+          <td id="ar_111">24</td>
+          <td id="sh_111">2</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_111">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">C</font>arrier          </td>
+          <td>
+            <input id="qt_112" class="qt_1" name="12" value="0" size="5" type="text">
+          </td>
+          <td id="pw_112">12</td>
+          <td id="ar_112">24</td>
+          <td id="sh_112">2</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_112">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">H</font>eavy Cruiser          </td>
+          <td>
+            <input id="qt_113" class="qt_1" name="13" value="0" size="5" type="text">
+          </td>
+          <td id="pw_113">48</td>
+          <td id="ar_113">48</td>
+          <td id="sh_113">4</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_113">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">B</font>attleship          </td>
+          <td>
+            <input id="qt_114" class="qt_1" name="14" value="0" size="5" type="text">
+          </td>
+          <td id="pw_114">168</td>
+          <td id="ar_114">128</td>
+          <td id="sh_114">10</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_114">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">F</font>leet Carrier          </td>
+          <td>
+            <input id="qt_115" class="qt_1" name="15" value="0" size="5" type="text">
+          </td>
+          <td id="pw_115">64</td>
+          <td id="ar_115">96</td>
+          <td id="sh_115">8</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_115">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">D</font>readnought          </td>
+          <td>
+            <input id="qt_116" class="qt_1" name="16" value="0" size="5" type="text">
+          </td>
+          <td id="pw_116">756</td>
+          <td id="ar_116">512</td>
+          <td id="sh_116">20</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_116">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">T</font>itan          </td>
+          <td>
+            <input id="qt_117" class="qt_1" name="17" value="0" size="5" type="text">
+          </td>
+          <td id="pw_117">3402</td>
+          <td id="ar_117">2048</td>
+          <td id="sh_117">30</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_117">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">L</font>eviathan          </td>
+          <td>
+            <input id="qt_118" class="qt_1" name="18" value="0" size="5" type="text">
+          </td>
+          <td id="pw_118">10000</td>
+          <td id="ar_118">6600</td>
+          <td id="sh_118">40</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_118">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">D</font>eath Star          </td>
+          <td>
+            <input id="qt_119" class="qt_1" name="19" value="0" size="5" type="text">
+          </td>
+          <td id="pw_119">25500</td>
+          <td id="ar_119">13500</td>
+          <td id="sh_119">60</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_119">0</td>
+         </tr>
+  
+  <tr><td colspan="6"><br></td></tr>
+
+          <tr>
+          <td align="left">
+            <font size="+1">B</font>arracks          </td>
+          <td>
+            <input id="qt_120" class="qt_1" name="20" value="0" size="5" type="text">
+          </td>
+          <td id="pw_120">4</td>
+          <td id="ar_120">4</td>
+          <td style="color: rgb(33, 33, 33);" id="sh_120">0</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_120">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">L</font>aser Turrets          </td>
+          <td>
+            <input id="qt_121" class="qt_1" name="21" value="0" size="5" type="text">
+          </td>
+          <td id="pw_121">8</td>
+          <td id="ar_121">8</td>
+          <td style="color: rgb(33, 33, 33);" id="sh_121">0</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_121">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">M</font>issile Turrets          </td>
+          <td>
+            <input id="qt_122" class="qt_1" name="22" value="0" size="5" type="text">
+          </td>
+          <td id="pw_122">16</td>
+          <td id="ar_122">16</td>
+          <td style="color: rgb(33, 33, 33);" id="sh_122">0</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_122">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">P</font>lasma Turrets          </td>
+          <td>
+            <input id="qt_123" class="qt_1" name="23" value="0" size="5" type="text">
+          </td>
+          <td id="pw_123">24</td>
+          <td id="ar_123">24</td>
+          <td style="color: rgb(33, 33, 33);" id="sh_123">0</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_123">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">I</font>on Turrets          </td>
+          <td>
+            <input id="qt_124" class="qt_1" name="24" value="0" size="5" type="text">
+          </td>
+          <td id="pw_124">32</td>
+          <td id="ar_124">32</td>
+          <td id="sh_124">2</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_124">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">P</font>hoton Turrets          </td>
+          <td>
+            <input id="qt_125" class="qt_1" name="25" value="0" size="5" type="text">
+          </td>
+          <td id="pw_125">64</td>
+          <td id="ar_125">64</td>
+          <td id="sh_125">6</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_125">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">D</font>isruptor Turrts          </td>
+          <td>
+            <input id="qt_126" class="qt_1" name="26" value="0" size="5" type="text">
+          </td>
+          <td id="pw_126">256</td>
+          <td id="ar_126">256</td>
+          <td id="sh_126">8</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_126">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">D</font>eflection Shlds          </td>
+          <td>
+            <input id="qt_127" class="qt_1" name="27" value="0" size="5" type="text">
+          </td>
+          <td id="pw_127">2</td>
+          <td id="ar_127">512</td>
+          <td id="sh_127">16</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_127">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">P</font>lanetary Shield          </td>
+          <td>
+            <input id="qt_128" class="qt_1" name="28" value="0" size="5" type="text">
+          </td>
+          <td id="pw_128">4</td>
+          <td id="ar_128">2048</td>
+          <td id="sh_128">20</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_128">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">P</font>lanetary Ring          </td>
+          <td>
+            <input id="qt_129" class="qt_1" name="29" value="0" size="5" type="text">
+          </td>
+          <td id="pw_129">2048</td>
+          <td id="ar_129">1024</td>
+          <td id="sh_129">12</td>
+          <td style="color: rgb(33, 33, 33);" id="rs_129">0</td>
+         </tr>
+  </tbody></table>
+</td>
+<td class="blank">
+<table id="deffleet" width="99%">
+  <tbody><tr>
+    <th colspan="6" class="th_header2">
+      <font size="+1">D</font>EFENDING FLEET <a href="javascript:void(0)" title="Reset defending fleet"><img src="littletarget.gif" id="def_fleet"></a>
+    </th>
+  </tr>
+  <tr>
+    <td colspan="6"><br></td>
+  </tr>
+  <tr>
+    <td width="30%">Unit</td>
+    <td width="15%">Qty</td>
+    <td width="15%">Pwr</td>
+    <td width="15%">Armr</td>
+    <td width="10%">Shld</td>
+    <td width="15%">Rslt <a href="javascript:void(0)" title="End fleet -&gt; Start fleet"><img src="littletarget.gif" id="s_to_e"></a></td>
+  </tr>
+        <tr>
+          <td align="left">
+            <font size="+1">F</font>ighters          </td>
+          <td>
+            <input id="qt_20" class="qt_2" name="0" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_20" class="pw_2" name="0" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_20" class="ar_2" name="0" value="0" size="5" type="text">
+          </td>
+          <td>
+						          </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_20">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">B</font>ombers          </td>
+          <td>
+            <input id="qt_21" class="qt_2" name="1" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_21" class="pw_2" name="1" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_21" class="ar_2" name="1" value="0" size="5" type="text">
+          </td>
+          <td>
+						          </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_21">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">H</font>eavy Bombers          </td>
+          <td>
+            <input id="qt_22" class="qt_2" name="2" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_22" class="pw_2" name="2" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_22" class="ar_2" name="2" value="0" size="5" type="text">
+          </td>
+          <td>
+						          </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_22">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">I</font>on Bombers          </td>
+          <td>
+            <input id="qt_23" class="qt_2" name="3" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_23" class="pw_2" name="3" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_23" class="ar_2" name="3" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_23" class="sh_2" name="3" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_23">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">C</font>orvette          </td>
+          <td>
+            <input id="qt_24" class="qt_2" name="4" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_24" class="pw_2" name="4" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_24" class="ar_2" name="4" value="0" size="5" type="text">
+          </td>
+          <td>
+						          </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_24">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">R</font>ecycler          </td>
+          <td>
+            <input id="qt_25" class="qt_2" name="5" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_25" class="pw_2" name="5" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_25" class="ar_2" name="5" value="0" size="5" type="text">
+          </td>
+          <td>
+						          </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_25">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">D</font>estroyer          </td>
+          <td>
+            <input style="color: white;" id="qt_26" class="qt_2" name="6" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_26" class="pw_2" name="6" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_26" class="ar_2" name="6" value="0" size="5" type="text">
+          </td>
+          <td>
+						          </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_26">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">F</font>rigate          </td>
+          <td>
+            <input id="qt_27" class="qt_2" name="7" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_27" class="pw_2" name="7" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_27" class="ar_2" name="7" value="0" size="5" type="text">
+          </td>
+          <td>
+						          </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_27">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">I</font>on Frigate          </td>
+          <td>
+            <input id="qt_28" class="qt_2" name="8" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_28" class="pw_2" name="8" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_28" class="ar_2" name="8" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_28" class="sh_2" name="8" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_28">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">S</font>cout Ship          </td>
+          <td>
+            <input id="qt_29" class="qt_2" name="9" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_29" class="pw_2" name="9" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_29" class="ar_2" name="9" value="0" size="5" type="text">
+          </td>
+          <td>
+						          </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_29">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">O</font>utpost Ship          </td>
+          <td>
+            <input id="qt_210" class="qt_2" name="10" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_210" class="pw_2" name="10" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_210" class="ar_2" name="10" value="0" size="5" type="text">
+          </td>
+          <td>
+						          </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_210">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">C</font>ruiser          </td>
+          <td>
+            <input id="qt_211" class="qt_2" name="11" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_211" class="pw_2" name="11" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_211" class="ar_2" name="11" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_211" class="sh_2" name="11" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_211">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">C</font>arrier          </td>
+          <td>
+            <input id="qt_212" class="qt_2" name="12" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_212" class="pw_2" name="12" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_212" class="ar_2" name="12" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_212" class="sh_2" name="12" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_212">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">H</font>eavy Cruiser          </td>
+          <td>
+            <input id="qt_213" class="qt_2" name="13" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_213" class="pw_2" name="13" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_213" class="ar_2" name="13" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_213" class="sh_2" name="13" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_213">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">B</font>attleship          </td>
+          <td>
+            <input id="qt_214" class="qt_2" name="14" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_214" class="pw_2" name="14" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_214" class="ar_2" name="14" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_214" class="sh_2" name="14" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_214">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">F</font>leet Carrier          </td>
+          <td>
+            <input id="qt_215" class="qt_2" name="15" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_215" class="pw_2" name="15" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_215" class="ar_2" name="15" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_215" class="sh_2" name="15" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_215">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">D</font>readnought          </td>
+          <td>
+            <input id="qt_216" class="qt_2" name="16" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_216" class="pw_2" name="16" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_216" class="ar_2" name="16" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_216" class="sh_2" name="16" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_216">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">T</font>itan          </td>
+          <td>
+            <input id="qt_217" class="qt_2" name="17" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_217" class="pw_2" name="17" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_217" class="ar_2" name="17" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_217" class="sh_2" name="17" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_217">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">L</font>eviathan          </td>
+          <td>
+            <input id="qt_218" class="qt_2" name="18" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_218" class="pw_2" name="18" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_218" class="ar_2" name="18" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_218" class="sh_2" name="18" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_218">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">D</font>eath Star          </td>
+          <td>
+            <input id="qt_219" class="qt_2" name="19" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_219" class="pw_2" name="19" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_219" class="ar_2" name="19" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_219" class="sh_2" name="19" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_219">0</td>
+         </tr>
+    <tr><td colspan="6"><br></td></tr>
+          <tr>
+          <td align="left">
+            <font size="+1">B</font>arracks          </td>
+          <td>
+            <input id="qt_220" class="qt_2" name="20" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_220" class="pw_2" name="20" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_220" class="ar_2" name="20" value="0" size="5" type="text">
+          </td>
+          <td>
+						          </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_220">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">L</font>aser Turrets          </td>
+          <td>
+            <input id="qt_221" class="qt_2" name="21" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_221" class="pw_2" name="21" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_221" class="ar_2" name="21" value="0" size="5" type="text">
+          </td>
+          <td>
+						          </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_221">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">M</font>issile Turrets          </td>
+          <td>
+            <input id="qt_222" class="qt_2" name="22" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_222" class="pw_2" name="22" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_222" class="ar_2" name="22" value="0" size="5" type="text">
+          </td>
+          <td>
+						          </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_222">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">P</font>lasma Turrets          </td>
+          <td>
+            <input id="qt_223" class="qt_2" name="23" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_223" class="pw_2" name="23" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_223" class="ar_2" name="23" value="0" size="5" type="text">
+          </td>
+          <td>
+						          </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_223">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">I</font>on Turrets          </td>
+          <td>
+            <input id="qt_224" class="qt_2" name="24" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_224" class="pw_2" name="24" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_224" class="ar_2" name="24" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_224" class="sh_2" name="24" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_224">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">P</font>hoton Turrets          </td>
+          <td>
+            <input id="qt_225" class="qt_2" name="25" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_225" class="pw_2" name="25" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_225" class="ar_2" name="25" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_225" class="sh_2" name="25" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_225">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">D</font>isruptor Turrts          </td>
+          <td>
+            <input id="qt_226" class="qt_2" name="26" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_226" class="pw_2" name="26" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_226" class="ar_2" name="26" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_226" class="sh_2" name="26" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_226">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">D</font>eflection Shlds          </td>
+          <td>
+            <input id="qt_227" class="qt_2" name="27" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_227" class="pw_2" name="27" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_227" class="ar_2" name="27" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_227" class="sh_2" name="27" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_227">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">P</font>lanetary Shield          </td>
+          <td>
+            <input id="qt_228" class="qt_2" name="28" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_228" class="pw_2" name="28" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_228" class="ar_2" name="28" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_228" class="sh_2" name="28" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_228">0</td>
+         </tr>
+          <tr>
+          <td align="left">
+            <font size="+1">P</font>lanetary Ring          </td>
+          <td>
+            <input id="qt_229" class="qt_2" name="29" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="pw_229" class="pw_2" name="29" value="0" size="5" type="text">
+          </td>
+          <td>
+            <input id="ar_229" class="ar_2" name="29" value="0" size="5" type="text">
+          </td>
+          <td>
+						            <input id="sh_229" class="sh_2" name="29" value="0" size="5" type="text">
+                      </td>
+          <td style="color: rgb(33, 33, 33);" id="rs_229">0</td>
+         </tr>
+  </tbody></table>
+</td>
+</tr>
+    <tr>
+      <td class="blank">
+        <br>
+      </td>
+    </tr>
+<tr>
+  <td colspan="2" class="blank" align="center">
+    <table width="500">
+      <tbody><tr>
+        <th colspan="4" class="th_header2">
+          <font size="+1">F</font>INAL REPORT
+        </th>
+      </tr>
+      <tr>
+        <td colspan="4"><br></td>
+      </tr>
+      <tr>
+        <th colspan="2" width="50%">Attacker's Fleet</th>
+        <th colspan="2" width="50%">Defender's Fleet</th>
+      </tr>
+      <tr>
+        <td><font size="+1">L</font>osses</td>
+        <td id="loss_1">0</td>
+        <td><font size="+1">L</font>osses</td>
+        <td id="loss_2">0</td>
+      </tr>
+      <tr>
+        <td><font size="+1">R</font>epair Cost</td>
+        <td id="repair">0</td>
+        <td><font size="+1">D</font>ebris</td>
+        <td id="debris">0</td>
+      </tr>
+      <tr>
+        <td>Profit</td><td id="profit">0</td>
+      </tr>
+	  <tr><td>profit delta</td><td id="profit_delta">0</td></tr>
+      <tr>
+        <td colspan="4"><br></td>
+      </tr>
+      <tr>
+        <th colspan="2"><font size="+1">T</font>otal Destruction</th>
+        <th colspan="2" id="totald">0</th>
+      </tr>
+    </tbody></table>
+   </td>
+  </tr>
+</tbody></table>
+
+</div><div id="naptha_container0932014_0707"></div>
+</body></html>
